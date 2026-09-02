@@ -9,6 +9,11 @@ Here is a quick walkthrough of how Formix works, creating a custom form with log
 <video controls src="https://github.com/user-attachments/assets/2e2d714f-90cc-4c07-85c3-1f8c4cca66c3" width="100%"></video>
 
 
+
+
+
+
+
 ## ✨ Core Features
 
 - **Form Builder**: A simple drag-and-drop tool to make custom forms.
