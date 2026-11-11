@@ -33,6 +33,12 @@ const VideoUploadField = ({ field, onChange, highlight }: Props) => {
 
         setUploading(true);
 
+        if (!supabase) {
+            setError("Uploads are not configured yet.");
+            setUploading(false);
+            return;
+        }
+
         const path = `videos/${Date.now()}_${file.name.replace(/\s+/g, "_")}`;
         const { error: uploadError } = await supabase.storage
             .from(STORAGE_BUCKET)
